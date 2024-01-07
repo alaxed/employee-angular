@@ -1,6 +1,6 @@
 <div class="col-md-6 offset-md-3">
     <h3>Create Employee</h3>
-    <form (ngSubmit)="onSubmit()">
+    <form>
         <div class="form-group">
             <label for="">First Name</label>
             <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
@@ -14,6 +14,7 @@
             <input type="text" class="form-control" id="emailId" [(ngModel)]="employee.emailId" name="emailId">
         </div>
 
-        <button class="btn btn-success" type="submit">Save</button>
+        <button (click)="onSubmit()" class="btn btn-success" type="submit">Save</button>
+        <button (click)="updateEmployee()" class="btn btn-success" type="submit">Save</button>
     </form>
 </div>

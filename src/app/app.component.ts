@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeComponent } from './employee/employee.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     HttpClientModule,
     CreateEmployeeComponent,
     FormsModule,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    EmployeeComponent
 
   ],
   templateUrl: './app.component.html',

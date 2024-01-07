@@ -32,7 +32,7 @@ export class EmployeeListComponent implements OnInit {
   }
 
   updateEmployee(id: number) {
-    this.router.navigate(['update-employee', id])
+    this.router.navigate(['employee', id])
   }
 
   deleteEmployee(id: number) {
